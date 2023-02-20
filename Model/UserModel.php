@@ -1,0 +1,15 @@
+<?php
+
+require_once ROOT_PATH . "/Model/DataBase.php";
+
+class UserModel extends DataBase
+{
+
+    public function getUsers(int $limit): array
+    {
+
+            return $this->select($limit);
+
+    }
+
+}
